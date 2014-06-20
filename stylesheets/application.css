@@ -52,6 +52,23 @@ body {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   -webkit-text-size-adjust: 100%; }
 
+.contact {
+  text-align:center;
+  padding:10%;
+}
+  .contact a {
+    color:#5E627F;
+    font-family: "open sans"!;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
 .quote {
   background: #2A2C39;
   position: absolute;
