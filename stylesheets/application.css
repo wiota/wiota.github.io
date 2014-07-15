@@ -48,7 +48,7 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #eaeaea;
+  background: #1f6490;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   -webkit-text-size-adjust: 100%; }
 
@@ -57,7 +57,7 @@ body {
   padding:10%;
 }
   .contact a {
-    color:#FFF;
+    color:#fff;
     font-family: "open sans"!;
     font-size: 18px;
     font-weight: 200;
@@ -69,18 +69,28 @@ body {
     text-decoration: underline;
   }
 
+.back {
+  position: fixed;
+  bottom: 0%;
+  left: 10%;
+  right: 10%;
+  -webkit-border-top-left-radius: 50%;
+  -webkit-border-top-right-radius: 50%;
+  -moz-border-radius-topleft: 50%;
+  -moz-border-radius-topright: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  height: 0;
+  padding: 0 0 80% 0;
+  background-color: #236894;
+}
+
 .quote {
-  background: #2A2C39;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   margin: auto;
-  padding-left:20%;
-  padding-right:20%;
-  padding-top:10%;
+  padding: 14.6%;
   overflow:auto;
+  overflow-x: hidden;
 }
   .quote h2 {
     color: #E9E9EB;
@@ -88,12 +98,63 @@ body {
     font-style: italic;
     margin: 0 0 20px 0;
     text-align: left;
-    text-indent: -10px; }
+    text-indent: 0px;
+    z-index: 100;
+  }
   .quote h3 {
     color: #fff;
-    font: 400 36px/1.4 "cardo";
+    font: 400 24px/1.4 "cardo";
     margin: 0 0 20px 0;
     text-align: left;
-    text-indent: -32px; }
+    text-indent: 0px;
+    z-index: 100;
+
+  }
     .quote h3 em {
       font-style: italic; }
+  .quote .open_quote,
+  .quote .close_quote {
+    color: #fff;
+    font: 300 100px/1.4 "cardo";
+    display:block;
+    position:fixed;
+    padding: 5%;
+    z-index: 0;}
+  .quote .open_quote {
+    top: 30%;
+    left: 0px;}
+  .quote .close_quote {
+    top: 30%;
+    right: 0px;}
+  .quote h2 .open_quote,
+  .quote h2 .close_quote {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    }
+  .quote h2 .open_quote{
+    transform:translate(-15px, 0px);
+    -webkit-transform: translate(-15px, 0px);
+    -o-transform: translate(-15px, 0px);
+    -moz-transform: translate(-15px, 0px);
+    }
+  .quote h2 .close_quote{
+    transform:translate(15px, 0px);
+    -webkit-transform: translate(15px, 0px);
+    -o-transform: translate(15px, 0px);
+    -moz-transform: translate(15px, 0px);
+    }
+  .quote h2:hover .open_quote{
+    transform:translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    opacity: 1;}
+  .quote h2:hover .close_quote{
+    transform:translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    opacity: 1;}
+
