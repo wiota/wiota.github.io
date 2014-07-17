@@ -239,7 +239,7 @@ hr {
 
   @media (max-width: 450px) {
     .pyramid .text h2 {font-size: 20px;}
-   .pyramid .text {font-size: 8px;}
+   .pyramid .text {font-size: 9px;}
   }
 
 .wedo {
@@ -298,6 +298,12 @@ hr {
 
     @media (max-width: 720px) {
       .wedo h2 {font-size: 40px; margin: 0 0 10% 0;}
+    }
+
+    @media (max-width: 450px) {
+      .wedo h2 {font-size: 20px; margin: 0 0 5% 0;}
+      .wedo h2 .wemake {font-size: 10px;}
+      .wedo {font-size: 10px;}
     }
 
 .quote_triangle {
