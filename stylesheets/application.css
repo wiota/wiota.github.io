@@ -250,7 +250,7 @@ hr {
 
   @media (max-width: 450px) {
     .pyramid .text h2 {font-size: 20px;}
-   .pyramid .text {font-size: 9px;}
+   .pyramid .text {font-size: 10px;}
   }
 
 .wedo {
@@ -313,8 +313,8 @@ hr {
 
     @media (max-width: 450px) {
       .wedo h2 {font-size: 20px; margin: 0 0 5% 0;}
-      .wedo h2 .wemake {font-size: 10px;}
-      .wedo {font-size: 10px;}
+      .wedo h2 .wemake {font-size: 12px;}
+      .wedo {font-size: 12px;}
     }
 
 .quote_triangle {
@@ -371,6 +371,9 @@ hr {
     z-index: 100;
     /* text-shadow: 1px 1px #000; */
   }
+
+
+
   .quote h3 {
     color: #fff;
     font: 400 16px/1.4 "cardo";
@@ -383,6 +386,22 @@ hr {
     .quote h3 em {
       font-style: italic;
     }
+
+  @media (max-width: 973px) {
+    .quote h2 {font-size: 20px;}
+    .quote h3 {font-size: 16px;}
+  }
+
+  @media (max-width: 720px) {
+    .quote h2 {font-size: 16px;}
+    .quote h3 {font-size: 14px;}
+  }
+
+  @media (max-width: 450px) {
+    .quote h2 {font-size: 16px;}
+    .quote h3 {font-size: 14px;}
+  }
+
   .quote .open_quote,
   .quote .close_quote {
     color: #1f6490;
@@ -408,3 +427,4 @@ hr {
   .quote h2:hover .open_quote, .quote h2:hover .close_quote{
     opacity: 1;
   }
+
