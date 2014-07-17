@@ -101,6 +101,17 @@ hr {
   }
 }
 
+@media (max-width: 450px) {
+  .column {
+    padding: 0% 0%;
+  }
+  .circle, .arch {
+    left: 0%;
+    right: 0%;
+    padding: 0 0 100% 0;
+  }
+}
+
 .arch {
   z-index:100;
 
@@ -320,11 +331,11 @@ hr {
     z-index: 103;
   }
 
-.quote {
+.quote_arch {
   position:relative;
   z-index: 200;
   margin: -90% 0% 0;
-  padding: 25% 25% 75%;
+  padding: 0 0 100%;
   height: 0;
   -webkit-border-top-left-radius: 50%;
   -webkit-border-top-right-radius: 50%;
@@ -334,6 +345,22 @@ hr {
   border-top-right-radius: 50%;
   background-color: #1f6490;
 }
+
+.quote {
+  position:relative;
+  z-index: 200;
+  margin: 0;
+  padding: 50% 0% 75%;
+  background-color: #1f6490;
+}
+
+.quote_text {
+  position:relative;
+  z-index: 201;
+  margin: -125% 25% 0;
+  padding: 0% 0% 75%;
+}
+
   .quote h2 {
     color: #fff;
     font: 400 24px/1.4 "cardo";
@@ -358,18 +385,18 @@ hr {
     }
   .quote .open_quote,
   .quote .close_quote {
-    color: #fff;
+    color: #1f6490;
     font: 200 60px/1.4 "cardo";
     display:block;
     position:absolute;
     padding: 5%;
     z-index: 0;}
   .quote .open_quote {
-    top: 0%;
-    left: 5%;}
+    top: -10%;
+    left: -35%;}
   .quote .close_quote {
-    top: 0%;
-    right: 5%;}
+    top: -10%;
+    right: -35%;}
   .quote h2 .open_quote,
   .quote h2 .close_quote {
     opacity: 0;
