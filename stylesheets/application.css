@@ -57,33 +57,276 @@ body {
 
 a {color: #def7da;}
 
-.arch {
+hr {
+  height: 1px;
+  width: 100%;
+  border-style: none;
+  border-bottom: 1px dotted #e2e9c4;
+  background-color: transparent;
+  margin: 1em 0;
+}
+
+
+/* Column */
+
+.column {
+  position: relative;
+  margin: auto;
+  padding: 0% 20%;
+  overflow:auto;
+  overflow-x: hidden;
+}
+
+.circle, .arch {
   position: fixed;
   top: 0%;
   left: 20%;
   right: 20%;
+
+  height: 0;
+  padding: 0 0 60% 0;
+  background-color: #e2e9c4;
+
+}
+
+
+@media (max-width: 650px) {
+  .column {
+    padding: 0% 5%;
+  }
+  .circle, .arch {
+    left: 5%;
+    right: 5%;
+    padding: 0 0 90% 0;
+  }
+}
+
+.arch {
+  z-index:100;
+
   -webkit-border-bottom-left-radius: 50%;
   -webkit-border-bottom-right-radius: 50%;
   -moz-border-radius-bottomleft: 50%;
   -moz-border-radius-bottomright: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  height: 0;
-  padding: 0 0 60% 0;
-  background-color: #3d7faa;
+}
+  .arch hr {
+    position:absolute;
+    top:49%;
+    }
+
+.circle {
+  z-index:102;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
-.column {
+.company_title {
+  width: 90%;
+  height: 0;
+  padding: 20% 0 70%;
+  margin: 5% 5% 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-transform: lowercase;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(31, 100, 144, 0.9);
+  overflow: hidden;
   position: relative;
-  margin: auto;
-  padding: 1.5% 20%;
-  overflow:auto;
-  overflow-x: hidden;
+  z-index: 110;
 }
+  .company_title h1 {
+    font: 700 160px/1.4 "cardo";
+    margin: 0;
+  }
+  .contact {
+    margin: 0;
+    padding:0%;
+    text-align:center;
+  }
+    .contact a {
+      font-size: 34px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      line-height: 24px;
+    }
+  @media (max-width: 780px) {
+    .company_title h1 {font: 700 130px/1.4 "cardo";}
+    .contact a {font-size: 30px;}
+  }
+
+  @media (max-width: 630px) {
+    .company_title h1 {font: 700 100px/1.4 "cardo";}
+    .contact a {font-size: 26px;}
+  }
+
+  @media (max-width: 450px) {
+    .company_title h1 {font: 700 70px/1.4 "cardo";}
+    .contact a {font-size: 22px;}
+  }
+
+.pyramid {
+  position:relative;
+  color: #fff;
+  width: 90%;
+  padding: 40% 5% 20%;
+  margin: 10% 0;
+  z-index: 110;
+  /* background-color: rgba(31, 100, 144, 0.5); */
+}
+
+  .pyramid .shape,
+  .shape_back {
+    height: 0;
+    width: 100%;
+    padding: 0 0 111.111% 0;
+  }
+  .pyramid .shape {
+    z-index: 10;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  .shape_back {
+    position:absolute;
+    padding: 10% 0 90%;
+    left:0;
+    right:0;
+    z-index: 101;
+  }
+
+  .pyramid .text h2 {
+    color: #fff;
+    font: 700 40px/1.4 "cardo";
+    font-style: normal;
+    text-transform: lowercase;
+    margin: 0 0 0 0;
+    text-align: center;
+    text-indent: 0px;
+    z-index: 100;
+  }
+
+  .pyramid .text {
+    font: 400 25px/1.4 "helvetica neue";
+    position:relative;
+    text-align: center;
+    z-index: 11;
+  }
+
+  @media (max-width: 4000px) {
+    .pyramid .text h2 {font-size: 40px;}
+    .pyramid .text {font-size: 25px;}
+  }
+
+  @media (max-width: 1330px) {
+    .pyramid .text h2 {font-size: 33px;}
+    .pyramid .text {font-size: 21px;}
+  }
+
+  @media (max-width: 1030px) {
+    .pyramid .text h2 {font-size: 27px;}
+    .pyramid .text {font-size: 17px;}
+  }
+
+  @media (max-width: 850px) {
+    .pyramid .text h2 {font-size: 21px;}
+    .pyramid .text {font-size: 14px;}
+  }
+
+  @media (max-width: 450px) {
+    .pyramid .text h2 {font-size: 20px;}
+   .pyramid .text {font-size: 8px;}
+  }
+
+.wedo {
+  position:relative;
+  z-index: 103;
+  color: #0b2231;
+  width: 80%;
+  height: 0;
+  padding: 10% 10% 90%;
+  margin: 0% 0;
+  font-size: 24px;
+  line-height: 1.4;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url('https://s3.amazonaws.com/portphilio/work_up_back.png');
+}
+  .wedo h2 {
+    color: #0b2231;
+    font: 700 100px/1.4 "cardo";
+    font-style: normal;
+    margin: 0 0 20% 0;
+    text-align: center;
+    text-indent: 0px;
+    z-index: 100;
+  }
+
+  .wedo h2 .wemake {
+    display:block;
+    font: 400 30px/1.4 "cardo";
+    font-style: italic;
+    text-transform: lowercase;
+  }
+
+    @media (max-width: 4000px) {
+      .wedo h2 {font-size: 100px;}
+      .wedo h2 .wemake {font-size: 30px;}
+      .wedo {font-size: 24px;}
+    }
+
+    @media (max-width: 1200px) {
+      .wedo h2 {font-size: 80px;}
+      .wedo h2 .wemake {font-size: 24px;}
+      .wedo {font-size: 20px;}
+    }
+
+    @media (max-width: 1000px) {
+      .wedo h2 {font-size: 60px;}
+      .wedo h2 .wemake {font-size: 20px;}
+      .wedo {font-size: 18px;}
+    }
+
+    @media (max-width: 850px) {
+      .wedo h2 {font-size: 40px;}
+      .wedo h2 .wemake {font-size: 16px;}
+      .wedo {font-size: 16px;}
+    }
+
+    @media (max-width: 720px) {
+      .wedo h2 {font-size: 40px; margin: 0 0 10% 0;}
+    }
+
+.quote_triangle {
+    position:absolute;
+    padding: 0 0 100%;
+    left:0;
+    right:0;
+    z-index: 103;
+  }
+
+.quote_box {
+    background-color: #e2e9c4;
+    padding: 0 0 100%;
+    z-index: 103;
+  }
 
 .quote {
   position:relative;
-  margin: 20% 0;
+  z-index: 200;
+  margin: -90% 0% 0;
+  padding: 25% 25% 75%;
+  height: 0;
+  -webkit-border-top-left-radius: 50%;
+  -webkit-border-top-right-radius: 50%;
+  -moz-border-radius-topleft: 50%;
+  -moz-border-radius-topright: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: #1f6490;
 }
   .quote h2 {
     color: #fff;
@@ -93,6 +336,7 @@ a {color: #def7da;}
     text-align: left;
     text-indent: 0px;
     z-index: 100;
+    /* text-shadow: 1px 1px #000; */
   }
   .quote h3 {
     color: #fff;
@@ -103,141 +347,31 @@ a {color: #def7da;}
     z-index: 100;
 
   }
-    .column h3 em {
-      font-style: italic; }
+    .quote h3 em {
+      font-style: italic;
+    }
   .quote .open_quote,
-  .column .close_quote {
+  .quote .close_quote {
     color: #fff;
-    font: 200 100px/1.4 "cardo";
+    font: 200 60px/1.4 "cardo";
     display:block;
     position:absolute;
     padding: 5%;
     z-index: 0;}
-  .column .open_quote {
-    top: 0;
-    left: -20%;}
-  .column .close_quote {
-    top: 0;
-    right: -20%;}
-  .column h2 .open_quote,
-  .column h2 .close_quote {
+  .quote .open_quote {
+    top: 0%;
+    left: 5%;}
+  .quote .close_quote {
+    top: 0%;
+    right: 5%;}
+  .quote h2 .open_quote,
+  .quote h2 .close_quote {
+    opacity: 0;
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     }
-  .column h2 .open_quote{
-    transform:translate(-15px, 0px);
-    -webkit-transform: translate(-15px, 0px);
-    -o-transform: translate(-15px, 0px);
-    -moz-transform: translate(-15px, 0px);
-    }
-  .column h2 .close_quote{
-    transform:translate(15px, 0px);
-    -webkit-transform: translate(15px, 0px);
-    -o-transform: translate(15px, 0px);
-    -moz-transform: translate(15px, 0px);
-    }
-  .column h2:hover .open_quote{
-    transform:translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px);
+  .quote h2:hover .open_quote, .quote h2:hover .close_quote{
     opacity: 1;
-  }
-  .column h2:hover .close_quote{
-    transform:translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px);
-    opacity: 1;
-  }
-
-h1 {
-  font: 700 160px/1.4 "cardo";
-  width: 90%;
-  height: 10px;
-  padding: 20% 0 70%;
-  margin: 0 5%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  text-transform: lowercase;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(31, 100, 144, 0.5);
-  overflow: hidden;
-}
-
-
-.contact {
-  margin: -40% 0 0 ;
-  text-align:center;
-  padding:10%;
-}
-  .contact a {
-    font-size: 34px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    line-height: 24px;
-  }
-
-
-@media (max-width: 715px) {
-  h1 {font: 700 130px/1.4 "cardo";}
-  .contact a {font-size: 30px;}
-}
-
-@media (max-width: 580px) {
-  h1 {font: 700 100px/1.4 "cardo";}
-  .contact a {font-size: 26px;}
-}
-
-@media (max-width: 450px) {
-  h1 {font: 700 70px/1.4 "cardo";}
-  .contact a {font-size: 22px;}
-}
-
-.pyramid {
-  color: #fff;
-  width: 90%;
-  padding: 5% 5%;
-  margin: 30% 0;
-  font-size: 20px;
-  line-height: 35px;
-  background-color: rgba(31, 100, 144, 0.5);
-}
-
-.wedo {
-  color: #0b2231;
-  width: 90%;
-  height: 0;
-  padding: 10% 5% 90%;
-  margin: 0% 0;
-  font-size: 20px;
-  background-color: rgba(245, 251, 255, 0.7);
-}
-  .wedo h2 {
-    color: #0b2231;
-    font: 700 60px/1.4 "cardo";
-    font-style: normal;
-    margin: 0 0 20px 0;
-    text-align: center;
-    text-indent: 0px;
-    z-index: 100;
-  }
-
-  .wedo h2 .wemake {
-    display:block;
-    font: 400 20px/1.4 "cardo";
-    font-style: italic;
-    text-transform: lowercase;
-  }
-
-  .pyramid ul {
-
-  }
-  .pyramid li {
-    padding: 10% 0 0 0;
-    border-bottom: 1px dotted #fff;
   }
