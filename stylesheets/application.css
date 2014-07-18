@@ -89,7 +89,6 @@ hr {
 
 }
 
-
 @media (max-width: 650px) {
   .column {
     padding: 0% 5%;
@@ -202,12 +201,29 @@ hr {
     top:0;
     left:0;
   }
+
   .shape_back {
     position:absolute;
-    padding: 10% 0 90%;
+    padding: 10% 33.33333% 90%;
+    width: 60%;
     left:0;
     right:0;
     z-index: 101;
+  }
+
+
+  @media (max-width: 650px) {
+    .shape_back {
+      padding: 10% 5.5% 90%;
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .shape_back {
+      padding: 10% 0% 90%;
+      width: 100%;
+    }
   }
 
   .pyramid .text h2 {
