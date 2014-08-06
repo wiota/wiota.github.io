@@ -61,7 +61,7 @@ hr {
   height: 1px;
   width: 100%;
   border-style: none;
-  border-bottom: 1px dotted #e2e9c4;
+  border-bottom: 1px dotted #cdd5de;
   background-color: transparent;
   margin: 1em 0;
 }
@@ -85,7 +85,7 @@ hr {
 
   height: 0;
   padding: 0 0 60% 0;
-  background-color: #e2e9c4;
+  background-color: #cdd5de;
 
 }
 
@@ -112,7 +112,7 @@ hr {
 }
 
 .arch {
-  z-index:100;
+  z-index:102;
 
   -webkit-border-bottom-left-radius: 50%;
   -webkit-border-bottom-right-radius: 50%;
@@ -280,8 +280,12 @@ hr {
   font-size: 24px;
   line-height: 1.4;
   background-color: rgba(255, 255, 255, 0.8);
-  background-image: url('https://s3.amazonaws.com/portphilio/work_up_back.png');
+  background-image: url('https://s3.amazonaws.com/wiota/wiotaco/4grid_light.png');
 }
+  .wedo hr {
+    border-bottom: 1px dotted #ffff00;
+  }
+
   .wedo h2 {
     color: #0b2231;
     font: 700 100px/1.4 "cardo";
@@ -293,6 +297,7 @@ hr {
   }
 
   .wedo h2 .wemake {
+    color: #000;
     display:block;
     font: 400 30px/1.4 "cardo";
     font-style: italic;
@@ -342,7 +347,7 @@ hr {
   }
 
 .quote_box {
-    background-color: #e2e9c4;
+    background-color: #cdd5de;
     padding: 0 0 100%;
     z-index: 103;
   }
@@ -366,7 +371,7 @@ hr {
   position:relative;
   z-index: 200;
   margin: 0;
-  padding: 50% 0% 75%;
+  padding: 50% 0% 0%;
   background-color: #1f6490;
 }
 
@@ -427,10 +432,10 @@ hr {
     padding: 5%;
     z-index: 0;}
   .quote .open_quote {
-    top: -10%;
+    top: -20%;
     left: -35%;}
   .quote .close_quote {
-    top: -10%;
+    top: -20%;
     right: -35%;}
   .quote h2 .open_quote,
   .quote h2 .close_quote {
