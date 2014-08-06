@@ -175,7 +175,7 @@ hr {
   }
 
   @media (max-width: 450px) {
-    .company_title h1 {font: 700 70px/1.4 "cardo";}
+    .company_title h1 {font: 700 90px/1.4 "cardo";}
     .contact a {font-size: 16px;}
   }
 
